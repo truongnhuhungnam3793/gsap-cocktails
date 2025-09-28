@@ -1,17 +1,21 @@
 import gsap from "gsap"
 import { ScrollTrigger, SplitText } from "gsap/all"
-import Navbar from "./components/Navbar"
+import ReactLenis, { useLenis } from "lenis/react"
 import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
 const App = () => {
+  useLenis()
+
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <div className="h-[2345px]"></div>
-    </main>
+    <ReactLenis root>
+      <main>
+        <Navbar />
+        <Hero />
+      </main>
+    </ReactLenis>
   )
 }
 
