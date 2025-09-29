@@ -45,6 +45,7 @@ const Hero = () => {
           start: "top top",
           end: "bottom top",
           scrub: true,
+          toggleActions: "play none reverse none",
         },
       })
       .to(
