@@ -62,7 +62,7 @@ const Hero = () => {
         0
       )
 
-    const startValue = isMobile ? "top 50%" : "center 50%"
+    const startValue = isMobile ? "top 50%" : "bottom bottom"
     const endValue = isMobile ? "120% top" : "bottom top"
 
     // Video scroll animation timeline
@@ -73,6 +73,7 @@ const Hero = () => {
         end: endValue,
         scrub: true,
         pin: true,
+        // markers: true,
       },
     })
 

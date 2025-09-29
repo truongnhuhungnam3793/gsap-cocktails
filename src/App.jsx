@@ -1,6 +1,7 @@
 import gsap from "gsap"
 import { ScrollTrigger, SplitText } from "gsap/all"
 import ReactLenis, { useLenis } from "lenis/react"
+import Cocktails from "./components/Cocktails"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 
@@ -14,6 +15,7 @@ const App = () => {
       <main>
         <Navbar />
         <Hero />
+        <Cocktails />
       </main>
     </ReactLenis>
   )
