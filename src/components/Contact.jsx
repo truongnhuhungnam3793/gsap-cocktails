@@ -13,8 +13,6 @@ const Contact = () => {
         trigger: "#contact",
         // markers: true,
         start: "top center",
-        end: "bottom bottom",
-        scrub: true,
       },
       ease: "power1.inOut",
     })
@@ -37,11 +35,15 @@ const Contact = () => {
         duration: 1,
         ease: "power1.inOut",
       })
-      .from("#f-left-leaf", {
-        xPercent: -100,
-        duration: 1,
-        ease: "power1.inOut",
-      })
+      .from(
+        "#f-left-leaf",
+        {
+          xPercent: -100,
+          duration: 1,
+          ease: "power1.inOut",
+        },
+        "<"
+      )
   })
 
   return (

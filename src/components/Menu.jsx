@@ -58,8 +58,6 @@ const Menu = () => {
           trigger: "#menu",
           // markers: true,
           start: "top 66%",
-          end: "bottom bottom",
-          scrub: true,
         },
       })
       .from("#m-right-leaf", {
@@ -67,11 +65,15 @@ const Menu = () => {
         duration: 1,
         ease: "power1.inOut",
       })
-      .from("#m-left-leaf", {
-        xPercent: -100,
-        duration: 1,
-        ease: "power1.inOut",
-      })
+      .from(
+        "#m-left-leaf",
+        {
+          xPercent: -100,
+          duration: 1,
+          ease: "power1.inOut",
+        },
+        "<"
+      )
   }, [currentIndex])
 
   const totalSlides = sliderLists.length
